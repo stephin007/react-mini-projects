@@ -3,6 +3,7 @@
 ### About
 
 This is a simple list of static birthdays which uses state to add and remove the birthdays from the list.
+Demo: [birthdayreminder.vercel.app](https://birthdayreminder.vercel.app)
 
 ### `npm start`
 
