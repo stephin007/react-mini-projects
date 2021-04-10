@@ -8,9 +8,11 @@ This repository will show the basics of the following:
  - Adding Loading state with the help of useState.
  - Multiple returns according to conditions. 
 
+Demo: [simple-tours.vercel.app](https://https://simple-tours.vercel.app/)
+
 #### Note
 Prop Drilling(Don't use much, always use some state management system like Context API, REDUX etc)
-Demo: [simple-tours.vercel.app](https://https://simple-tours.vercel.app/)
+
 
 ### `npm start`
 
