@@ -20,7 +20,7 @@ function App() {
       const tours = await response.json();
       setLoading(false);
       setTours(tours);
-      console.log(tours);
+      // console.log(tours); uncomment this line to see the JSON in the console
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -35,6 +35,19 @@ function App() {
     return (
       <main>
         <Loading />
+      </main>
+    );
+  }
+
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">
+          <h2>No tours Left</h2>
+          <button className="btn" onClick={() => fetchTours()}>
+            refresh
+          </button>
+        </div>
       </main>
     );
   }
