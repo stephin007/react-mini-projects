@@ -1,7 +1,10 @@
 # React Mini Projects
 
+```
+This repository has react tutorials which will get you started over the basics. 🚀
+```
 
-This repository has basic react tutorials which will get you started over the basics .
+# Please dont just clone it, Always star and fork the repo, it will help me to move forward in making more such mini projects. ⭐
 
 
 ## To Get started.
