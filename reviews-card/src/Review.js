@@ -33,6 +33,16 @@ const Review = () => {
       });
     };
 
+    // randomIndex function will help us to randomise our indices to give random information of the people when surprise me button is clicked.
+    const randomIndex = () => {
+      let randomIndex = Math.floor(Math.random() * people.length);
+      if (randomIndex === index) {
+        randomIndex = index + 1;
+      }
+      setIndex(checkIndex(randomIndex));
+      console.log(randomIndex);
+    };
+
     return (
       <article className="review">
         <div className="img-container">
@@ -52,7 +62,9 @@ const Review = () => {
             <FaChevronRight />
           </button>
         </div>
-        <button className="random-btn">surprise me</button>
+        <button className="random-btn" onClick={randomIndex}>
+          surprise me
+        </button>
       </article>
     );
 }
