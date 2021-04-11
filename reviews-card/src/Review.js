@@ -7,21 +7,29 @@ const Review = () => {
     const {name, job, image, text} = people[index]
 
     // checkIndex function will check if the index goes more the length of the array or less than 0. If its more , it will make the index to 0 and if its less than 0 it will change the index to the last item of the array
-    
+    const checkIndex = (number) => {
+      if (number > people.length - 1) {
+        return 0;
+      }
+      if (number < 0) {
+        return people.length - 1;
+      }
+      return number;
+    };
 
 
     // prevPerson and nextPerson help in increasing or decreasing the index of the array.
     const nextPerson = () => {
       setIndex((index) => {
         let newIndex = index + 1;
-        return (newIndex);
+        return checkIndex(newIndex);
       });
     };
 
     const prevPerson = () => {
       setIndex((index) => {
         let newIndex = index + 1;
-        return (newIndex);
+        return checkIndex(newIndex);
       });
     };
 
