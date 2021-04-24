@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "reactminiprojects"
+  },
+  "targets": {
+    "reactminiprojects": {
+      "hosting": {
+        "categorymenu": [
+          "categorymenu"
+        ]
+      }
+    }
+  }
+}
